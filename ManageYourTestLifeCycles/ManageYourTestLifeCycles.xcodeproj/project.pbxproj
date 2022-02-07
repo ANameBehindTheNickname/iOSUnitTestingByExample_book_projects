@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		F8622F7527B155CF00AB6050 /* ManageYourTestLifeCycles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8622F6C27B155CF00AB6050 /* ManageYourTestLifeCycles.framework */; };
 		F8622F7B27B155CF00AB6050 /* ManageYourTestLifeCycles.h in Headers */ = {isa = PBXBuildFile; fileRef = F8622F6F27B155CF00AB6050 /* ManageYourTestLifeCycles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8622F8527B1561F00AB6050 /* ManageYourTestLifeCyclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8622F8427B1561F00AB6050 /* ManageYourTestLifeCyclesTests.swift */; };
+		F8622F8727B1633900AB6050 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8622F8627B1633900AB6050 /* MyClass.swift */; };
+		F8622F8927B163AD00AB6050 /* MyClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8622F8827B163AD00AB6050 /* MyClassTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +27,8 @@
 		F8622F6C27B155CF00AB6050 /* ManageYourTestLifeCycles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ManageYourTestLifeCycles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8622F6F27B155CF00AB6050 /* ManageYourTestLifeCycles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManageYourTestLifeCycles.h; sourceTree = "<group>"; };
 		F8622F7427B155CF00AB6050 /* ManageYourTestLifeCyclesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManageYourTestLifeCyclesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8622F8427B1561F00AB6050 /* ManageYourTestLifeCyclesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageYourTestLifeCyclesTests.swift; sourceTree = "<group>"; };
+		F8622F8627B1633900AB6050 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		F8622F8827B163AD00AB6050 /* MyClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				F8622F6F27B155CF00AB6050 /* ManageYourTestLifeCycles.h */,
+				F8622F8627B1633900AB6050 /* MyClass.swift */,
 			);
 			path = ManageYourTestLifeCycles;
 			sourceTree = "<group>";
@@ -77,7 +80,7 @@
 		F8622F7827B155CF00AB6050 /* ManageYourTestLifeCyclesTests */ = {
 			isa = PBXGroup;
 			children = (
-				F8622F8427B1561F00AB6050 /* ManageYourTestLifeCyclesTests.swift */,
+				F8622F8827B163AD00AB6050 /* MyClassTests.swift */,
 			);
 			path = ManageYourTestLifeCyclesTests;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				TargetAttributes = {
 					F8622F6B27B155CF00AB6050 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					F8622F7327B155CF00AB6050 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -192,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8622F8727B1633900AB6050 /* MyClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8622F8527B1561F00AB6050 /* ManageYourTestLifeCyclesTests.swift in Sources */,
+				F8622F8927B163AD00AB6050 /* MyClassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +343,7 @@
 		F8622F7F27B155CF00AB6050 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -358,6 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -365,6 +372,7 @@
 		F8622F8027B155CF00AB6050 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -392,6 +400,7 @@
 		F8622F8227B155CF00AB6050 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -413,6 +422,7 @@
 		F8622F8327B155CF00AB6050 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
