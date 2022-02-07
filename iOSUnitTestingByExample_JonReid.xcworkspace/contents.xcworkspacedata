@@ -4,4 +4,7 @@
    <FileRef
       location = "container:AssertYourself/AssertYourself.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ManageYourTestLifeCycles/ManageYourTestLifeCycles.xcodeproj">
+   </FileRef>
 </Workspace>
