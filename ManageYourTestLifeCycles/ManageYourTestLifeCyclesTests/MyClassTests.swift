@@ -7,15 +7,25 @@ import XCTest
 @testable import ManageYourTestLifeCycles
 
 class MyClassTests: XCTestCase {
+    private var sut: MyClass!
+    
+    override func setUp() {
+        super.setUp()
+        sut = .init()
+    }
+    
+    override func tearDown() {
+        sut = nil
+        super.tearDown()
+    }
+    
     func test_methodOne() {
-        let sut = MyClass()
         sut.methodOne()
-        
-        XCTFail("Fail methodOne")
+        // assert something
     }
     
     func test_methodTwo() {
-        let sut = MyClass()
         sut.methodTwo()
+        // assert something
     }
 }
