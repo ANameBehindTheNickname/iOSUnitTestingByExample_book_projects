@@ -7,4 +7,7 @@
    <FileRef
       location = "group:ManageYourTestLifeCycles/ManageYourTestLifeCycles.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CodeCoverage/CodeCoverage.xcodeproj">
+   </FileRef>
 </Workspace>
