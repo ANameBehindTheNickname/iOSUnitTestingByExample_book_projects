@@ -13,4 +13,7 @@
    <FileRef
       location = "group:TakeControlOfAppLaunch/TakeControlOfAppLaunch.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ManageDifficultDependencies/ManageDifficultDependencies.xcodeproj">
+   </FileRef>
 </Workspace>
