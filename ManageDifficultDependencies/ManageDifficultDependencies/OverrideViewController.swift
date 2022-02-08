@@ -7,8 +7,12 @@ import UIKit
 
 class OverrideViewController: UIViewController {
 
+    func analytics() -> Analytics {
+        Analytics.shared
+    }
+    
     override func viewDidAppear(_ animated: Bool) { super.viewDidAppear(animated)
         super.viewDidAppear(animated)
-        Analytics.shared.track(event: "viewDidAppear - \(type(of: self))")
+        analytics().track(event: "viewDidAppear - \(type(of: self))")
     }
 }
