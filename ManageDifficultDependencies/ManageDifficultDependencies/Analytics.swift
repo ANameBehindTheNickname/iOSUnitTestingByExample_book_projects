@@ -11,7 +11,7 @@ class Analytics {
     func track(event: String) {
         print(">> " + event)
         
-        if Analytics.self !== Analytics.shared {
+        if self !== Analytics.shared {
             print(">> ...Not the Analytics Singleton")
         }
     }
