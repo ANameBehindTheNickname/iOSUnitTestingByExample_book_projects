@@ -10,4 +10,7 @@
    <FileRef
       location = "group:CodeCoverage/CodeCoverage.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:TakeControlOfAppLaunch/TakeControlOfAppLaunch.xcodeproj">
+   </FileRef>
 </Workspace>
