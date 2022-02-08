@@ -14,6 +14,8 @@
 		F83F586127B2674F0056ED5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83F586027B2674F0056ED5B /* Assets.xcassets */; };
 		F83F586427B2674F0056ED5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F83F586227B2674F0056ED5B /* LaunchScreen.storyboard */; };
 		F83F586F27B2674F0056ED5B /* TakeControlOfAppLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F586E27B2674F0056ED5B /* TakeControlOfAppLaunchTests.swift */; };
+		F83F588827B2702C0056ED5B /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F588727B2702C0056ED5B /* TestingAppDelegate.swift */; };
+		F83F588A27B2708B0056ED5B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F588927B2708B0056ED5B /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		F83F586527B2674F0056ED5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F83F586A27B2674F0056ED5B /* TakeControlOfAppLaunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeControlOfAppLaunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83F586E27B2674F0056ED5B /* TakeControlOfAppLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeControlOfAppLaunchTests.swift; sourceTree = "<group>"; };
+		F83F588727B2702C0056ED5B /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		F83F588927B2708B0056ED5B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		F83F585627B2674D0056ED5B /* TakeControlOfAppLaunch */ = {
 			isa = PBXGroup;
 			children = (
+				F83F588927B2708B0056ED5B /* main.swift */,
 				F83F585727B2674D0056ED5B /* AppDelegate.swift */,
 				F83F585927B2674D0056ED5B /* SceneDelegate.swift */,
 				F83F585B27B2674D0056ED5B /* ViewController.swift */,
@@ -92,6 +97,7 @@
 		F83F586D27B2674F0056ED5B /* TakeControlOfAppLaunchTests */ = {
 			isa = PBXGroup;
 			children = (
+				F83F588727B2702C0056ED5B /* TestingAppDelegate.swift */,
 				F83F586E27B2674F0056ED5B /* TakeControlOfAppLaunchTests.swift */,
 			);
 			path = TakeControlOfAppLaunchTests;
@@ -200,6 +206,7 @@
 			files = (
 				F83F585C27B2674D0056ED5B /* ViewController.swift in Sources */,
 				F83F585827B2674D0056ED5B /* AppDelegate.swift in Sources */,
+				F83F588A27B2708B0056ED5B /* main.swift in Sources */,
 				F83F585A27B2674D0056ED5B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F83F586F27B2674F0056ED5B /* TakeControlOfAppLaunchTests.swift in Sources */,
+				F83F588827B2702C0056ED5B /* TestingAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
