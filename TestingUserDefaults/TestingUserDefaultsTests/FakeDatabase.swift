@@ -7,7 +7,7 @@ import Foundation
 @testable import TestingUserDefaults
 
 class FakeDatabase: Database {
-    private var integers = [String: Int]()
+    var integers = [String: Int]()
     
     func set(_ value: Int, forKey defaultName: String) {
         integers[defaultName] = value

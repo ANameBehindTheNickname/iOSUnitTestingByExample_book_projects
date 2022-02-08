@@ -29,4 +29,12 @@ class ViewControllerTests: XCTestCase {
         
         XCTAssertEqual(sut.counterLabel.text, "0")
     }
+    
+    func test_viewDidLoad_with7InDatabase_shows7InCounterLabel() {
+        database.integers = ["count": 7]
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertEqual(sut.counterLabel.text, "7")
+    }
 }
