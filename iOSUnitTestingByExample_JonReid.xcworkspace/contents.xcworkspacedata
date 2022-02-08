@@ -16,4 +16,7 @@
    <FileRef
       location = "group:ManageDifficultDependencies/ManageDifficultDependencies.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:TestingUserDefaults/TestingUserDefaults.xcodeproj">
+   </FileRef>
 </Workspace>
