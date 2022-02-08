@@ -29,6 +29,8 @@
 		F87ABE4627B293DA0087B1C0 /* OverrideViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87ABE4527B293DA0087B1C0 /* OverrideViewControllerTests.swift */; };
 		F87ABE4827B29AED0087B1C0 /* InstanceInitializerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87ABE4727B29AED0087B1C0 /* InstanceInitializerViewControllerTests.swift */; };
 		F87ABE4A27B29BD40087B1C0 /* InstancePropertyViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87ABE4927B29BD40087B1C0 /* InstancePropertyViewControllerTests.swift */; };
+		F87ABE4C27B29E920087B1C0 /* ClosureInitializerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87ABE4B27B29E920087B1C0 /* ClosureInitializerViewControllerTests.swift */; };
+		F87ABE4E27B29F100087B1C0 /* ClosurePropertyViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87ABE4D27B29F100087B1C0 /* ClosurePropertyViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		F87ABE4527B293DA0087B1C0 /* OverrideViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideViewControllerTests.swift; sourceTree = "<group>"; };
 		F87ABE4727B29AED0087B1C0 /* InstanceInitializerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceInitializerViewControllerTests.swift; sourceTree = "<group>"; };
 		F87ABE4927B29BD40087B1C0 /* InstancePropertyViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstancePropertyViewControllerTests.swift; sourceTree = "<group>"; };
+		F87ABE4B27B29E920087B1C0 /* ClosureInitializerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureInitializerViewControllerTests.swift; sourceTree = "<group>"; };
+		F87ABE4D27B29F100087B1C0 /* ClosurePropertyViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosurePropertyViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 				F87ABE4527B293DA0087B1C0 /* OverrideViewControllerTests.swift */,
 				F87ABE4727B29AED0087B1C0 /* InstanceInitializerViewControllerTests.swift */,
 				F87ABE4927B29BD40087B1C0 /* InstancePropertyViewControllerTests.swift */,
+				F87ABE4B27B29E920087B1C0 /* ClosureInitializerViewControllerTests.swift */,
+				F87ABE4D27B29F100087B1C0 /* ClosurePropertyViewControllerTests.swift */,
 			);
 			path = ManageDifficultDependenciesTests;
 			sourceTree = "<group>";
@@ -267,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F87ABE4A27B29BD40087B1C0 /* InstancePropertyViewControllerTests.swift in Sources */,
+				F87ABE4E27B29F100087B1C0 /* ClosurePropertyViewControllerTests.swift in Sources */,
 				F87ABE4627B293DA0087B1C0 /* OverrideViewControllerTests.swift in Sources */,
 				F87ABE4827B29AED0087B1C0 /* InstanceInitializerViewControllerTests.swift in Sources */,
+				F87ABE4C27B29E920087B1C0 /* ClosureInitializerViewControllerTests.swift in Sources */,
 				F87ABE4427B286F00087B1C0 /* MySingletonViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
