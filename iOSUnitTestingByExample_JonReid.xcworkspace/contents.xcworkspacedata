@@ -19,4 +19,7 @@
    <FileRef
       location = "group:TestingUserDefaults/TestingUserDefaults.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:TestingNetworkRequests/TestingNetworkRequests.xcodeproj">
+   </FileRef>
 </Workspace>
