@@ -14,6 +14,7 @@
 		F8833DA027B3B1A500CA85A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8833D9F27B3B1A500CA85A2 /* Assets.xcassets */; };
 		F8833DA327B3B1A500CA85A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8833DA127B3B1A500CA85A2 /* LaunchScreen.storyboard */; };
 		F8833DC727B3B8BD00CA85A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8833DC627B3B8BD00CA85A2 /* Network.swift */; };
+		F8833DC927B3BAFF00CA85A2 /* SpyNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8833DC827B3BAFF00CA85A2 /* SpyNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		F8833DA427B3B1A500CA85A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8833DA927B3B1A500CA85A2 /* TestingNetworkRequestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingNetworkRequestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8833DC627B3B8BD00CA85A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		F8833DC827B3BAFF00CA85A2 /* SpyNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		F8833DAC27B3B1A500CA85A2 /* TestingNetworkRequestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8833DC827B3BAFF00CA85A2 /* SpyNetwork.swift */,
 			);
 			path = TestingNetworkRequestsTests;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 					};
 					F8833DA827B3B1A500CA85A2 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = F8833D9227B3B1A400CA85A2;
 					};
 				};
@@ -209,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8833DC927B3BAFF00CA85A2 /* SpyNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,14 +422,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.manbehindnickname.TestingNetworkRequestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingNetworkRequests.app/TestingNetworkRequests";
@@ -436,10 +448,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.manbehindnickname.TestingNetworkRequestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
