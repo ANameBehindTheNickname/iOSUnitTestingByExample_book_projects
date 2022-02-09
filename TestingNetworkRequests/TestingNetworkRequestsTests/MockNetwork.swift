@@ -3,10 +3,10 @@
 //  Copyright © 2022 ANameBehindTheNickname. All rights reserved.
 //
 
-import Foundation
+import XCTest
 @testable import TestingNetworkRequests
 
-class SpyNetwork: Network {
+class MockNetwork: Network {
     var dataTaskCallCount = 0
     var dataTaskRequests = [URLRequest]()
     
@@ -14,6 +14,11 @@ class SpyNetwork: Network {
         dataTaskCallCount += 1
         dataTaskRequests.append(request)
         return DummyDataTask()
+    }
+    
+    func verifyNetwork(with request: URLRequest) {
+        XCTAssertEqual(dataTaskCallCount, 1, "call count")
+        XCTAssertEqual(dataTaskRequests.first, request, "request")
     }
 }
 
