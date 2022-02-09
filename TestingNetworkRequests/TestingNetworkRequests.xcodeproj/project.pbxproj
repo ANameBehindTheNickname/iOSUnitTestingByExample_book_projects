@@ -13,6 +13,7 @@
 		F8833D9E27B3B1A400CA85A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8833D9C27B3B1A400CA85A2 /* Main.storyboard */; };
 		F8833DA027B3B1A500CA85A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8833D9F27B3B1A500CA85A2 /* Assets.xcassets */; };
 		F8833DA327B3B1A500CA85A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8833DA127B3B1A500CA85A2 /* LaunchScreen.storyboard */; };
+		F8833DC727B3B8BD00CA85A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8833DC627B3B8BD00CA85A2 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		F8833DA227B3B1A500CA85A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8833DA427B3B1A500CA85A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8833DA927B3B1A500CA85A2 /* TestingNetworkRequestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingNetworkRequestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8833DC627B3B8BD00CA85A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				F8833D9627B3B1A400CA85A2 /* AppDelegate.swift */,
 				F8833D9827B3B1A400CA85A2 /* SceneDelegate.swift */,
 				F8833D9A27B3B1A400CA85A2 /* ViewController.swift */,
+				F8833DC627B3B8BD00CA85A2 /* Network.swift */,
 				F8833D9C27B3B1A400CA85A2 /* Main.storyboard */,
 				F8833D9F27B3B1A500CA85A2 /* Assets.xcassets */,
 				F8833DA127B3B1A500CA85A2 /* LaunchScreen.storyboard */,
@@ -197,6 +200,7 @@
 			files = (
 				F8833D9B27B3B1A400CA85A2 /* ViewController.swift in Sources */,
 				F8833D9727B3B1A400CA85A2 /* AppDelegate.swift in Sources */,
+				F8833DC727B3B8BD00CA85A2 /* Network.swift in Sources */,
 				F8833D9927B3B1A400CA85A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
