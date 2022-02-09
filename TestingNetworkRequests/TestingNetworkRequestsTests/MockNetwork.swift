@@ -16,9 +16,9 @@ class MockNetwork: Network {
         return DummyDataTask()
     }
     
-    func verifyNetwork(with request: URLRequest) {
-        XCTAssertEqual(dataTaskCallCount, 1, "call count")
-        XCTAssertEqual(dataTaskRequests.first, request, "request")
+    func verifyNetwork(with request: URLRequest, file: StaticString = #file, line: UInt = #line) {
+        XCTAssertEqual(dataTaskCallCount, 1, "call count", file: file, line: line)
+        XCTAssertEqual(dataTaskRequests.first, request, "request", file: file, line: line)
     }
 }
 
