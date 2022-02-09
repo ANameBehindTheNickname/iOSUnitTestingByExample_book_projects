@@ -13,6 +13,12 @@ class SpyNetwork: Network {
     func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         dataTaskCallCount += 1
         dataTaskRequests.append(request)
-        return .init()
+        return DummyDataTask()
+    }
+}
+
+class DummyDataTask: URLSessionDataTask {
+    override func resume() {
+        
     }
 }
