@@ -22,4 +22,7 @@
    <FileRef
       location = "group:TestingNetworkRequests/TestingNetworkRequests.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:TestingNetworkResponses/TestingNetworkResponses.xcodeproj">
+   </FileRef>
 </Workspace>
