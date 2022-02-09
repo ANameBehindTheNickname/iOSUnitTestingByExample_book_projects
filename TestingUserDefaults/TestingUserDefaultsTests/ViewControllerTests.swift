@@ -37,4 +37,28 @@ class ViewControllerTests: XCTestCase {
         
         XCTAssertEqual(sut.counterLabel.text, "7")
     }
+    
+    func test_tappingButton_with12InDatabase_writes13ToDatabase() {
+        database.integers = ["count": 12]
+        sut.loadViewIfNeeded()
+        
+        tap(sut.incrementButton)
+        
+        XCTAssertEqual(database.integers["count"], 13)
+    }
+    
+    func test_tappingButton_with42InDatabase_shows43InCounterLabel() {
+        database.integers = ["count": 42]
+        sut.loadViewIfNeeded()
+        
+        tap(sut.incrementButton)
+        
+        XCTAssertEqual(sut.counterLabel.text, "43")
+    }
+    
+    // MARK: - Helpers
+    
+    private func tap(_ button: UIButton) {
+        button.sendActions(for: .touchUpInside)
+    }
 }
